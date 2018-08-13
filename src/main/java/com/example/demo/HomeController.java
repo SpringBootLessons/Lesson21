@@ -20,7 +20,7 @@ public class HomeController {
     public String showRegistrationPage(Model model)
     {
         model.addAttribute("user", new User());
-        return "/registration";
+        return "registration";
     }
 
     @RequestMapping(value="/register", method=RequestMethod.POST)
